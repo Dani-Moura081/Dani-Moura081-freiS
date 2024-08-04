@@ -8,7 +8,9 @@
 
 }
 
-.cabecalho {
+
+
+.cabecalho-sobre {
     height: 30%;
     display: flex;
     flex-direction: row;
@@ -18,17 +20,76 @@
     align-items: center;
 
 
+    .logo {
+        display: flex;
+        justify-content: start;
+        gap: 2em;
+        background-color: #6278F7;
+
+        h2 {
+            background-color: #6278F7;
+            color: #fff;
+            padding-top: 5%;
+        }
+    }
+
     ul {
         display: flex;
         list-style: none;
-        gap: 8px;
+        gap: 10px;
         color: #fff;
         background-color: #6278F7;
 
         li {
             background-color: #6278F7;
             font-size: 2vh;
+
+
+            a {
+                text-decoration: none;
+                color: #fff;
+                background-color: #6278F7;
+
+            }
         }
     }
 
+}
+
+.bem-vindo {
+    display: flex;
+    flex-direction: column;
+    padding: 5% 5%;
+    background-color: #F5F6FA;
+
+
+    .titulo {
+        color: #383131;
+        font-size: 3.7em;
+        text-align: start;
+        justify-content: space-around;
+
+    }
+
+    .paragrafo {
+        padding-top: 1.5em;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        color: #383131;
+        font-size: 2.5em;
+    }
+    .logo-sobre {
+        width: 100%; 
+        display: flex;
+        flex-direction: column;
+        padding-top: 7.5em;
+        justify-content: center; 
+        align-items: center; 
+
+        img{
+            width: 10%;
+        }
+    }
+    
 }

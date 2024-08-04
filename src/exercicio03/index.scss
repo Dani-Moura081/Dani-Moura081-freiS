@@ -1,0 +1,158 @@
+.cabecalho {
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #6278F7;
+    padding: 1% 5%;
+    align-items: center;
+
+
+    .logo {
+        display: flex;
+        justify-content: start;
+        gap: 2em;
+        background-color: #6278F7;
+
+        h2 {
+            background-color: #6278F7;
+            color: #fff;
+            padding-top: 5%;
+        }
+    }
+
+
+    ul {
+        display: flex;
+        gap: 10px;
+        list-style: none;
+        background-color: #6278F7;
+        color: #fff;
+
+        li {
+            font-size: 2vh;
+            text-decoration: none;
+
+            a {
+                text-decoration: none;
+                color: #fff;
+                background-color: #6278F7;
+
+            }
+        }
+    }
+
+}
+
+
+
+
+.navegacao03 {
+    display: flex;
+    flex-direction: column;
+    padding: 2.5%;
+    gap: 40px;
+
+    .titulo03 {
+        display: flex;
+        flex-direction: row;
+        gap: 1%;
+        align-items: center;
+    }
+
+    .exercicio03 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .explicacao03 {
+            width: 100%;
+            display: flex;
+            padding-top: 4%;
+            background-color: #fff;
+            height: 7em;
+            justify-content: center;
+            border-radius: 8px;
+
+
+            p {
+                background-color: #fff;
+                font-size: 1.3em;
+            }
+
+
+        }
+
+        .funcionalidade03 {
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            padding-top: 3%;
+            justify-content: flex-start;
+            gap: 1.3em;
+            border-radius: 8px;
+            width: 40%;
+            height: 12em;
+            padding-left: 3%;
+
+            .entradas {
+                display: flex;
+                flex-direction: row;
+                gap: 5px;
+                background-color: #fff;
+                justify-content: space-evenly;
+                .inputs {
+                    background-color: #fff;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1em;
+                    h3 {
+                        background-color: #fff;
+
+
+                    }
+
+                    input {
+                        background-color: #fff;
+                        border-radius: 8px;
+                        height: 2em;
+                        width: 64%;
+                        
+                        font-size: 1.2em;
+                        text-align: center;
+                        border-color: #A5A5A5;
+
+                    }
+
+                }
+
+            }
+
+            .executar {
+
+                display: flex;
+                flex-direction: row-reverse;
+                padding-top: 2%;
+                background-color: #fff;
+                padding-right: 12.6%;
+
+                button {
+                    background-color: #6278F7;
+                    color: #fff;
+                    border-radius: 8px;
+                    width: 16em;
+                    height: 3.1em;
+                    font-weight: 400%;
+                    border-color: #6278F7;
+
+                }
+
+
+
+            }
+
+
+
+        }
+    }
+}
