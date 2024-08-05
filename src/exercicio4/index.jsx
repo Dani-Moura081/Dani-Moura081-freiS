@@ -3,11 +3,10 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 
 export default function Exercicio03() {
-  const [qtdPQN, setQtdPQN] = useState(0);
-  const [qtdMED, setQtdMED] = useState(0);
-  const [qtdGG, setQtdGG] = useState(0);
-  const [res, setRes] = useState(0);
-
+  const [nomeLivro, setNomeLivro] = useState("");
+  const [qtdPaginas, setQtdPaginas] = useState(0);
+  const [tempo, setTempo] = useState(0);
+  const [res, setRes] = useState("");
   return (
     <div>
       <header className="cabecalho">
@@ -37,16 +36,15 @@ export default function Exercicio03() {
           <Link to="/">
             <img src="/assets/images/seta.png" alt="" />
           </Link>
-          <h2>Exercício 03 - Valor total por quantidade</h2>
+          <h2>Exercício 04 - Livros</h2>
         </div>
         <div className="linha" />
         <div className="exercicio03">
           <div className="explicacao03">
             <p>
-              Implementar um programa em Javascript para calcular o total de uma
-              venda de açaí a partir das quantidades compradas para cada
-              tamanho: pequeno, médio e grande, <br /> sabendo que o valor do
-              açaí é R$ 13,50; R$ 15,00 e R$ 17,50 respectivamente
+              Implemente um programa em React que calcule o tempo em que um
+              livro será lido por uma pessoa, a partir do nome do livro, do
+              total de paginas e da quantidade de segundo de leitura por pagina
             </p>
           </div>
 
@@ -56,36 +54,21 @@ export default function Exercicio03() {
           <div className="funcionalidade03">
             <div className="entradas">
               <div className="inputs">
-                <h3>Quantidade pequeno</h3>
-                <input
-                  type="number"
-                  onChange={(e) => setQtdPQN(e.target.value)}
-                />
+                <h3>Nome do livro</h3>
+                <input type="text"  onChange={setNomeLivro}/>
               </div>
 
               <div className="inputs">
-                <h3> Quantidade médio</h3>
-                <input
-                  type="number"
-                  onChange={(e) => setQtdMED(e.target.value)}
-                />
+                <h3> Quantidade de paginas</h3>
+                <input type="number" onChange={setQtdPaginas} />
               </div>
               <div className="inputs">
-                <h3>Quantidade grande</h3>
-                <input
-                  type="number"
-                  onChange={(e) => setQtdGG(e.target.value)}
-                />
+                <h3>Tempo de leitura em seg</h3>
+                <input type="number" onChange={setTempo} />
               </div>
             </div>
             <div className="executar">
-              <button
-                onClick={(e) =>
-                  setRes(qtdPQN * 13.5 + qtdMED * 15.0 + qtdGG * 17.5)
-                }
-              >
-                executar
-              </button>
+              <button>executar</button>
 
               <br />
               <br />
@@ -94,7 +77,7 @@ export default function Exercicio03() {
           </div>
           <div className="resultado03">
             <br />
-            <h4>Resultado: O total é R$ {res}</h4>
+            <h4>Resultado: O tempo de leitura é  {res}</h4>
           </div>
         </div>
       </div>
