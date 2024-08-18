@@ -60,6 +60,15 @@ export default function App() {
             <br />
             <p>Exercício 03</p>
           </div>
+          <div className='opcao'>
+            <Link to='/exercicio04'>
+              <img src="../../assets/images/Rectangle4.svg" alt="" />
+            </Link>
+            <br />
+            <h5>Leitura de livro</h5>
+            <br />
+            <p>Exercício 04</p>
+          </div>
 
         </div>
 

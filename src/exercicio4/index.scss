@@ -46,12 +46,14 @@
   padding: 2.5%;
   gap: 40px;
 
-    .linha {
-        background-color: #37FFF3;
-        
-        width: 100%;
-        height: 2px;
-    }
+  .linha {
+    background-color: #37B7FF;
+
+
+    width: 100%;
+    height: 2px;
+  }
+
   .titulo03 {
     display: flex;
     flex-direction: row;
@@ -87,7 +89,7 @@
       justify-content: flex-start;
       gap: 1.3em;
       border-radius: 8px;
-      width: 40%;
+      width: 60% !important;
       height: 12em;
       padding-left: 3%;
 
@@ -97,11 +99,13 @@
         gap: 5px;
         background-color: #fff;
         justify-content: space-evenly;
+
         .inputs {
           background-color: #fff;
           display: flex;
           flex-direction: column;
           gap: 1em;
+
           h3 {
             background-color: #fff;
           }
@@ -111,7 +115,6 @@
             border-radius: 8px;
             height: 2em;
             width: 64%;
-
             font-size: 1.2em;
             text-align: center;
             border-color: #a5a5a5;

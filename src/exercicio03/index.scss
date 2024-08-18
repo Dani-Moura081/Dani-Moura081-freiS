@@ -75,7 +75,9 @@
 
       p {
         background-color: #fff;
-        font-size: 1.3em;
+        font-size: 0.3em ;
+        text-align:center;
+        
       }
     }
 
@@ -87,23 +89,28 @@
       justify-content: flex-start;
       gap: 1.3em;
       border-radius: 8px;
-      width: 40%;
+      width: 50% !important;  
       height: 12em;
       padding-left: 3%;
 
       .entradas {
         display: flex;
         flex-direction: row;
-        gap: 5px;
+        gap: 7px;
         background-color: #fff;
-        justify-content: space-evenly;
+        justify-content: space-between;
+        align-items: center;
+
         .inputs {
           background-color: #fff;
           display: flex;
           flex-direction: column;
+          justify-content: center;
+          
           gap: 1em;
           h3 {
             background-color: #fff;
+            text-align: left;
           }
 
           input {

@@ -61,7 +61,7 @@ export default function Exercicio02() {
             />
 
             <div className="executar">
-              <button onClick={()=>setRes(converterKG/1000)}>executar</button>
+              <button onClick={()=>setRes(converterKG*1000)}>executar</button>
 
               <br />
               <br />
