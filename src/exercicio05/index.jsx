@@ -8,6 +8,7 @@ export default function Exercicio05() {
     const [media2, setMedia2] = useState(0)
     const [media3, setMedia3] = useState(0)
     const [resp, setResp] = useState('')
+    const [txt, setTxt] = useState('')
     function resultado() {
 
         const m1 = Number(media1);
@@ -20,7 +21,13 @@ export default function Exercicio05() {
         }
 
         let mediaFinal = (m1 + m2 + m3) / 3;
-        setResp(mediaFinal.toFixed(2));
+        if (mediaFinal>=5) {
+            setTxt('aprovado')
+        }
+        else if (mediaFinal<5) {
+            setTxt('reprovado')
+        }
+        setResp(mediaFinal.toFixed(1));
 
 
     }
@@ -77,6 +84,7 @@ export default function Exercicio05() {
                     <div className="resultado05">
                         <br />
                         <h4>a media final é: {resp}</h4>
+                        <h4>{txt}</h4>
                     </div>
                 </div>
             </div>
