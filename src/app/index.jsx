@@ -70,6 +70,16 @@ export default function App() {
             <p>Exercício 05</p>
           </div>
 
+          <div className='opcao'>
+            <Link to='/exercicio06'>
+              <img src="../../assets/images/crimsom.svg" alt="" />
+            </Link>
+            <br />
+            <h5>Salário líquido</h5>
+            <br />
+            <p>Exercício 06</p>
+          </div>
+
 
 
 

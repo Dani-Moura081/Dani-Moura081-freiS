@@ -1,31 +1,31 @@
 
-.navegacao05 {
+.navegacao06 {
     display: flex;
     flex-direction: column;
     padding: 2.5%;
     gap: 40px;
   
     .linha {
-      background-color: #CB37FF;
+      background-color: #FF5B37;
   
   
       width: 100%;
       height: 2px;
     }
   
-    .titulo05 {
+    .titulo06 {
       display: flex;
       flex-direction: row;
       gap: 1%;
       align-items: center;
     }
   
-    .exercicio05 {
+    .exercicio06 {
       display: flex;
       flex-direction: column;
       align-items: center;
   
-      .explicacao05 {
+      .explicacao06 {
         width: 100%;
         display: flex;
         padding-top: 4%;
@@ -40,7 +40,7 @@
         }
       }
   
-      .funcionalidade05 {
+      .funcionalidade06 {
         background-color: #fff;
         display: flex;
         flex-direction: column;
@@ -74,7 +74,7 @@
               background-color: #fff;
               border-radius: 8px;
               height: 2em;
-              width: 190% ;
+              width: 20em ;
               font-size: 1.2em;
               text-align: center;
               border-color: #a5a5a5;

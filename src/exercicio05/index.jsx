@@ -11,21 +11,23 @@ export default function Exercicio05() {
     const [txt, setTxt] = useState('')
     function resultado() {
 
-        const m1 = Number(media1);
-        const m2 = Number(media2);
-        const m3 = Number(media3);
+        const n1 = Number(media1);
+        const n2 = Number(media2);
+        const n3 = Number(media3);
 
-        if (m1 < 0 || m1 > 10 || m2 < 0 || m2 > 10 || m3 < 0 || m3 > 10) {
+        if (n1 < 0 || n1 > 10 || n2 < 0 || n2 > 10 || n3 < 0 || n3 > 10) {
             setResp('Média inválida, algum valor está errado');
             return;
         }
 
-        let mediaFinal = (m1 + m2 + m3) / 3;
+        let mediaFinal = (n1 + n2 + n3) / 3;
         if (mediaFinal>=5) {
             setTxt('aprovado')
         }
         else if (mediaFinal<5) {
             setTxt('reprovado')
+        }else{
+            setTxt('ERRO')
         }
         setResp(mediaFinal.toFixed(1));
 
@@ -83,8 +85,8 @@ export default function Exercicio05() {
                     </div>
                     <div className="resultado05">
                         <br />
-                        <h4>a media final é: {resp}</h4>
-                        <h4>{txt}</h4>
+                        <h4>a media final é: {resp} {txt}</h4>
+                       
                     </div>
                 </div>
             </div>
