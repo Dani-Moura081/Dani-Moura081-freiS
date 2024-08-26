@@ -1,0 +1,47 @@
+
+.comp-cabecalho {
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #6278F7 !important;
+    padding: 1% 5%;
+    align-items: center;
+
+
+    .logo {
+        display: flex;
+        justify-content: start;
+        gap: 2em;
+        background-color: #6278F7;
+
+        h2 {
+            background-color: #6278F7;
+            color: #fff;
+            padding-top: 5%;
+        }
+    }
+
+
+    ul {
+        display: flex;
+        gap: 10px;
+        list-style: none;
+        background-color: #6278F7;
+        color: #fff;
+        
+        li {
+            font-size: 2vh;
+            text-decoration: none;
+            background-color: #6278F7;
+
+            a {
+                text-decoration: none;
+                color: #fff;
+                background-color: #6278F7;
+
+            }
+        }
+    }
+
+}

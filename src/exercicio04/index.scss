@@ -1,46 +1,5 @@
-.cabecalho {
-  height: 30%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  background-color: #6278f7;
-  padding: 1% 5%;
-  align-items: center;
 
-  .logo {
-    display: flex;
-    justify-content: start;
-    gap: 2em;
-    background-color: #6278f7;
-
-    h2 {
-      background-color: #6278f7;
-      color: #fff;
-      padding-top: 5%;
-    }
-  }
-
-  ul {
-    display: flex;
-    gap: 10px;
-    list-style: none;
-    background-color: #6278f7;
-    color: #fff;
-
-    li {
-      font-size: 2vh;
-      text-decoration: none;
-
-      a {
-        text-decoration: none;
-        color: #fff;
-        background-color: #6278f7;
-      }
-    }
-  }
-}
-
-.navegacao03 {
+.navegacao04 {
   display: flex;
   flex-direction: column;
   padding: 2.5%;
@@ -54,19 +13,19 @@
     height: 2px;
   }
 
-  .titulo03 {
+  .titulo04 {
     display: flex;
     flex-direction: row;
     gap: 1%;
     align-items: center;
   }
 
-  .exercicio03 {
+  .exercicio04 {
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    .explicacao03 {
+    .explicacao04 {
       width: 100%;
       display: flex;
       padding-top: 4%;
@@ -81,7 +40,7 @@
       }
     }
 
-    .funcionalidade03 {
+    .funcionalidade04 {
       background-color: #fff;
       display: flex;
       flex-direction: column;

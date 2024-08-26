@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import {useState} from 'react'
 import "./index.scss";
+import Cabecalho from "../components/cabecalho";
 
 export default function Exercicio01() {
     const [valor, setValor] = useState(0);
@@ -17,27 +18,8 @@ export default function Exercicio01() {
     }
   return (
     <div>
-      <header className="cabecalho">
-        <div className="logo">
-          <img
-            src="/assets/images/logo.png"
-            alt="logo do instituto social nossa senhora de Fátima"
-          />
-          <h2>React FreiS</h2>
-        </div>
-
-        <div>
-          <ul>
-            <li>
-              <Link to="/"> inicio </Link>
-            </li>{" "}
-            <br />
-            <li>
-              <Link to="/sobre">sobre </Link>
-            </li>
-          </ul>
-        </div>
-      </header>
+      
+        <Cabecalho/>
 
       <div className="navegacao01">
         <div className="titulo01">

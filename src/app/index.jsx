@@ -1,30 +1,15 @@
 import './index.scss';
 // import '../../public/assets/fonts/fonts.css'
 import { Link } from "react-router-dom";
+import Cabecalho from '../components/cabecalho';
+
 
 export default function App() {
   return (
     <div>
-      <header className='cabecalho'>
+      <Cabecalho />
 
-        <div className='logo' >
-          <img src="/assets/images/logo.png" alt="logo do instituto social nossa senhora de Fátima" />
-          <h2>React FreiS</h2>
-        </div>
 
-        <div>
-          <ul>
-            <li>
-              <Link to="/"> inicio </Link>
-
-            </li >                <br />
-            <li>
-              <Link to='/sobre'>sobre </Link>
-            </li>
-          </ul>
-        </div>
-
-      </header>
       <div className='menu'>
         <h1>Escolha um treino...</h1>
 
@@ -40,6 +25,7 @@ export default function App() {
 
           </div>
 
+
           <div className='opcao'>
             <Link to='/exercicio02'>
               <img src="../../assets/images/verde.png" alt="" />
@@ -51,6 +37,7 @@ export default function App() {
 
           </div>
 
+
           <div className='opcao'>
             <Link to='/exercicio03'>
               <img src="../../assets/images/azul.png" alt="" />
@@ -60,6 +47,8 @@ export default function App() {
             <br />
             <p>Exercício 03</p>
           </div>
+
+
           <div className='opcao'>
             <Link to='/exercicio04'>
               <img src="../../assets/images/Rectangle4.svg" alt="" />
@@ -68,6 +57,36 @@ export default function App() {
             <h5>Leitura de livro</h5>
             <br />
             <p>Exercício 04</p>
+          </div>
+
+
+          <div className='opcao'>
+            <Link to='/exercicio05'>
+              <img src="../../assets/images/rosa.svg" alt="" />
+            </Link>
+            <br />
+            <h5>Média de notas</h5>
+            <br />
+            <p>Exercício 05</p>
+          </div>
+
+
+
+
+
+
+
+
+
+
+          <div className='opcao'>
+            <Link to='/exercicio11'>
+              <img src="../../assets/images/roxo.svg" alt="" />
+            </Link>
+            <br />
+            <h5>Tabuada</h5>
+            <br />
+            <p>Exercício 11</p>
           </div>
 
         </div>
