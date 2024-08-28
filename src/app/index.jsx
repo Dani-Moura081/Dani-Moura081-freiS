@@ -80,6 +80,16 @@ export default function App() {
             <p>Exercício 06</p>
           </div>
 
+          <div className='opcao'>
+            <Link to='/exercicio07'>
+              <img src="../../assets/images/ciano.png" alt="" />
+            </Link>
+            <br />
+            <h5>Cores primárias</h5>
+            <br />
+            <p>Exercício 07</p>
+          </div>
+
 
 
 
