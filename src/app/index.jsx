@@ -91,6 +91,17 @@ export default function App() {
           </div>
 
 
+          <div className='opcao'>
+            <Link to='/exercicio09'>
+              <img src="../../assets/images/gray.svg" alt="" />
+            </Link>
+            <br />
+            <h5>Sorveteria</h5>
+            <br />
+            <p>Exercício 09</p>
+          </div>
+
+
 
 
 

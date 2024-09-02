@@ -6,6 +6,7 @@ import Exercicio04 from "./exercicio04"
 import Exercicio05 from "./exercicio05"
 import Exercicio06 from "./exercicio06";
 import Exercicio07 from "./exercicio07";
+import Exercicio09 from "./exercicio09";
 import Exercicio11 from "./exercicio11"
 import Sobre from "./sobre/index";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
@@ -24,6 +25,8 @@ export default function Navegacao() {
                 <Route path='/exercicio05' element={<Exercicio05 />}></Route>
                 <Route path='/exercicio06' element={<Exercicio06 />}></Route>
                 <Route path='/exercicio07' element={<Exercicio07 />}></Route>
+
+                <Route path='/exercicio09' element={<Exercicio09 />}></Route>
 
                 <Route path='/exercicio11' element={<Exercicio11 />}></Route>
 
