@@ -10,7 +10,7 @@ export default function Cabecalho() {
           alt="logo do instituto social nossa senhora de Fátima"
         />
         <h2>React FreiS</h2>
-      </div>
+      </div>    
 
       <div>
         <ul>
