@@ -2,13 +2,13 @@
   display: flex;
   flex-direction: column;
 
-  .navegacao{
+  .navegacao {
     display: flex;
     flex-direction: column;
     padding: 2.5%;
     gap: 40px;
 
-    .funcionalidade{
+    .funcionalidade {
       background-color: #fff;
       display: flex;
       flex-direction: column;
@@ -21,6 +21,12 @@
       width: 30%;
       height: 18em;
       padding-left: 3%;
+
+
+      box-shadow:
+            rgba(0, 0, 0, 0.19) 0px 10px 20px,
+            rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
 
       h3 {
         background-color: #fff;
@@ -53,8 +59,17 @@
           font-weight: 400%;
           border-color: #6278f7;
         }
-        
+
+
       }
+    }
+
+    .resultado {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+
+
     }
   }
 

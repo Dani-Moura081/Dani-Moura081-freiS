@@ -1,0 +1,28 @@
+.exercicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    
+
+    .explicacao {
+        width: 100%;
+        display: flex;
+        padding-top: 1%;
+        background-color: #fff;
+        height: 13em;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        text-align: center;
+
+        box-shadow:
+            rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
+
+        p {
+            font-size: 1.3em;
+            text-align: center;
+        }
+    }
+}

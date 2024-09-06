@@ -1,7 +1,8 @@
 import "./index.scss";
-import { Link } from "react-router-dom";
 import { useState } from "react";
 import Cabecalho from "../components/cabecalho";
+import Titulo from "../components/titulo";
+import Explicacao from "../components/explicacao";
 
 export default function Exercicio02() {
   const [converterKG, setConverterKG] = useState(0);
@@ -9,50 +10,41 @@ export default function Exercicio02() {
 
 
   return (
-    <div>
-        <Cabecalho/>
+    <div className="exercicio02">
+      <Cabecalho />
 
       <div className="navegacao02">
-        
-        <div className="titulo02">
-          <Link to="/">
-            <img src="/assets/images/seta.png" alt="" />
-          </Link>
-          <h2>Exercício 02 - Converter Kg/gramas</h2>
-        </div>
 
-        <div className="linha" />
+        <Titulo
+          titulo='Exercício 02 - Converter Kg/gramas'
+          linha='#B3FF37'
+        />
 
-        <div className="exercicio02">
-          <div className="explicacao02">
-            <p>
-              Implementar um programa em Javascript para converter kilos em
-              gramas.
-            </p>
-          </div>
+        <Explicacao
+          explicacao='Implementar um programa em Javascript para converter kilos em gramas.'
+        />
 
-          <br />
-          <br />
-          <br />
-          <div className="funcionalidade02">
-            <h3>Valor em gramas</h3>
-            <input
-              type="number"
-              onChange={(e) => setConverterKG(e.target.value)}
-            />
+        <br />
+        <br />
+     
+        <div className="funcionalidade02">
+          <h3>Valor em kilos</h3>
+          <input
+            type="number"
+            onChange={(e) => setConverterKG(e.target.value)}
+          />
 
-            <div className="executar">
-              <button onClick={()=>setRes(converterKG*1000)}>executar</button>
+          <div className="executar02">
+            <button onClick={() => setRes(converterKG * 1000)}>executar</button>
 
-              <br />
-              <br />
-              <br />
-            </div>
-          </div>
-          <div className="resultado02">
             <br />
-            <h4>Resultado: O total é {res}</h4>
+            <br />
+            <br />
           </div>
+        </div>
+        <div className="resultado02">
+          <br />
+          <h4>Resultado: O total é {res}</h4>
         </div>
       </div>
     </div>

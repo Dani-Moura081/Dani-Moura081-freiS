@@ -1,101 +1,77 @@
-
-.navegacao02 {
+.exercicio02 {
     display: flex;
     flex-direction: column;
-    padding: 2.5%;
-    gap: 40px;
-
-    .linha {
-        background-color: #B3FF37;
-        
-        width: 100%;
-        height: 2px;
-    }
-
-    .titulo02 {
-        display: flex;
-        flex-direction: row;
-        gap: 1%;
-        align-items: center;
-    }
-
-    .exercicio02 {
+  
+    .navegacao02 {
+      display: flex;
+      flex-direction: column;
+      padding: 2.5%;
+      gap: 40px;
+  
+      .funcionalidade02 {
+        background-color: #fff;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        padding-top: 3%;
+        align-self: center;
+        justify-content: center;
+        gap: 1.6em;
+        border-radius: 8px;
+        width: 30%;
+        height: 12em;
+        padding-left: 3%;
 
-        .explicacao02 {
-            width: 100%;
-            display: flex;
-            padding-top: 4%;
-            background-color: #fff;
-            height: 7em;
-            justify-content: center;
-            border-radius: 8px;
+        box-shadow:
+            rgba(0, 0, 0, 0.19) 0px 10px 20px,
+            rgba(0, 0, 0, 0.23) 0px 6px 6px;
 
-
-            p {
-                background-color: #fff;
-                font-size: 1.3em;
-            }
-
-
+        
+  
+        h3 {
+          background-color: #fff;
         }
-
-        .funcionalidade02 {
-            background-color: #fff;
-            display: flex;
-            flex-direction: column;
-            padding-top: 3%;
-            justify-content: flex-start;
-            gap: 1.3em;
-            border-radius: 8px;
-            width: 30%;
-            height: 12em;
-            padding-left: 3%;
-
-            h3 {
-                background-color: #fff;
-
-
-            }
-
-            input {
-                background-color: #fff;
-                border-radius: 8px;
-                height: 4em;
-                width: 84%;
-
-                font-size: 1.2em;
-                text-align: center;
-                border-color: #A5A5A5;
-
-            }
-
-            .executar {
-                display: flex;
-                flex-direction: row-reverse;
-                padding-top: 2%;
-                background-color: #fff;
-                padding-right: 16%;
-
-                button {
-                    background-color: #6278F7;
-                    color: #fff;
-                    border-radius: 8px;
-                    width: 16em;
-                    height: 3.1em;
-                    font-weight: 400%;
-                    border-color: #6278F7;
-                    
-                }
-
-               
-
-            }
-
-
-
+  
+        input {
+          background-color: #fff;
+          border-radius: 8px;
+          min-height: 2em;
+          width: 84%;
+  
+          font-size: 1.2em;
+          text-align: center;
+          border-color: #a5a5a5;
         }
+  
+        .executar02 {
+          display: flex;
+          flex-direction: row-reverse;
+          padding-top: 2%;
+          background-color: #fff;
+          padding-right: 16%;
+  
+          button {
+            background-color: #6278f7;
+            color: #fff;
+            border-radius: 8px;
+            width: 16em;
+            height: 3.1em;
+            font-weight: 400%;
+            border-color: #6278f7;
+          }
+  
+  
+        }
+      }
+  
+      .resultado02 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+  
+  
+      }
     }
-}
+  
+  
+  
+  }

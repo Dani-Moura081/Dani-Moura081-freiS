@@ -17,11 +17,7 @@ export default function Titulo(props) {
             </div>
             <div className="linha" style={{backgroundColor: props.linha }}  />
 
-            <div className="explicacao">
-                <p className="explicacao">
-                    {props.explicacao}
-                </p>
-            </div>
+           
         </div>
 
     )
