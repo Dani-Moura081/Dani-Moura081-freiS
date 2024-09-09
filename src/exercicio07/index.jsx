@@ -2,6 +2,9 @@ import { Link } from "react-router-dom";
 import { useState } from 'react'
 import "./index.scss";
 import Cabecalho from "../components/cabecalho";
+import Titulo from "../components/titulo";
+import Explicacao from '../components/explicacao';
+
 
 export default function Exercicio07() {
 
@@ -13,7 +16,7 @@ export default function Exercicio07() {
 
     function resultado() {
 
-        if (cor1 == 'azul' || cor1 == 'amarelo' || cor1 == 'vermelho' || cor2 == 'azul' || cor2 == 'amarelo' || cor2 == 'vermelho') {
+        if (cor1 == 'azul' && cor1 == 'amarelo' && cor1 == 'vermelho' && cor2 == 'azul' && cor2 == 'amarelo' && cor2 == 'vermelho') {
             setResp("As cores são primárias")
             return
         } else {
@@ -23,51 +26,46 @@ export default function Exercicio07() {
     }
 
     return (
-        <div>
+        <div className='exercicio'>
 
             <Cabecalho />
 
-            <div className="navegacao07">
-                <div className="titulo07">
-                    <Link to="/">
-                        <img src="/assets/images/seta.png" alt="" />
-                    </Link>
-                    <h2>Exercício 07 - Cores primárias</h2>
-                </div>
-                <div className="linha" />
+            <div className="navegacao">
+                <Titulo
+                    titulo='Exercício 07 - Cores primárias'
+                    linha='#37FFAB'
+                />
+                <Explicacao
+                    explicacao='Implementar um programa em javascript para verificar se duas cores são primárias'
+                />
 
-                <div className="exercicio07">
-                    <div className="explicacao07">
-                        <p>
-                            Implementar um programa em javascript para verificar se duas cores são primárias
-                        </p>
-                    </div>
+                <br />
+                <br />
+                <div className="funcionalidade">
+                    <h3>cor 1</h3>
+                    <input type="text" onChange={(e) => setCor1(e.target.value)} />
 
-                    <br />
-                    <br />
-                    <br />
-                    <div className="funcionalidade07">
-                        <h3>Cor 1</h3>
-                        <input type="text" onChange={e => setCor1(e.target.value)} />
+                    <h3>cor 2</h3>
+                    <input type="text" onChange={(e) => setCor2(e.target.value)} />
 
-                        <h3>Cor 2</h3>
-                        <input type="text" onChange={e => setCor2(e.target.value)} />
+                    <div className="executar">
+                        <button onClick={resultado}>executar</button>
 
-                        <div className="executar">
-                            <button onClick={resultado}>executar</button>
-
-                            <br />
-                            <br />
-                            <br />
-                        </div>
-                    </div>
-                    <div className="resultado07">
                         <br />
-                        <h4> {resp} </h4>
+                        <br />
+                        <br />
                     </div>
+                </div>
+                <br />
+                <div className='resultado'>
+                    <h4 > {resp}</h4>
+
+
                 </div>
             </div>
         </div>
+
+
     );
 
 
