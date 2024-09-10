@@ -1,124 +1,110 @@
 import './index.scss';
-// import '../../public/assets/fonts/fonts.css'
-import { Link } from "react-router-dom";
 import Cabecalho from '../components/cabecalho';
-
+import Cards from '../components/card';
+import { Link } from 'react-router-dom';
 
 export default function App() {
   return (
-    <div>
+    <div className='inicio'>
       <Cabecalho />
 
-
-      <div className='menu'>
+      <div className='titulo-inicio'>
         <h1>Escolha um treino...</h1>
 
-        <div className='containers'>
-          <div className='opcao'>
-            <Link to='/exercicio01'>
-              <img src="../../assets/images/amarelo.png" alt="" />
-            </Link>
-            <br />
-            <h5>Cupom de desconto</h5>
-            <br />
-            <p>Exercício 01</p>
+      </div>
 
-          </div>
+      <div className='menu'>
 
+        <div className='cards'>
+          <Cards
+            link="/exercicio01"
+            titulo="Cupom de desconto"
+            subtitulo="Exercicio 01"
+            background="#ffce37"
+          />
 
-          <div className='opcao'>
-            <Link to='/exercicio02'>
-              <img src="../../assets/images/verde.png" alt="" />
-            </Link>
-            <br />
-            <h5>Converter Kg/gramas</h5>
-            <br />
-            <p>Exercício 02</p>
+        </div>
+        <div className='cards'>
+          <Cards
+            link="/exercicio02"
+            titulo="Converter Kg/gramas"
+            subtitulo="Exercicio 02"
+            background="#B3FF37"
+          />
 
-          </div>
+        </div>
+        <div className='cards'>
+          <Cards
+            link="/exercicio03"
+            titulo="Valor total por quantidade"
+            subtitulo="Exercicio 03"
+            background="#37FFF3"
+          />
 
+        </div>
+        <div className='cards'>
+          <Cards
+            link="/exercicio04"
+            titulo="Leitura de livro"
+            subtitulo="Exercicio 04"
+            background="#37B7FF"
+          />
 
-          <div className='opcao'>
-            <Link to='/exercicio03'>
-              <img src="../../assets/images/azul.png" alt="" />
-            </Link>
-            <br />
-            <h5>Valor total por quantidade</h5>
-            <br />
-            <p>Exercício 03</p>
-          </div>
+        </div>
+        <div className='cards'>
+          <Cards
+            link="/exercicio05"
+            titulo="Média de notas"
+            subtitulo="Exercicio 05"
+            background="#CB37FF"
+          />
 
+        </div>
+        <div className='cards'>
+          <Cards
+            link="/exercicio06"
+            titulo="Salário líquido"
+            subtitulo="Exercicio 06"
+            background="#FF5B37"
+          />
 
-          <div className='opcao'>
-            <Link to='/exercicio04'>
-              <img src="../../assets/images/Rectangle4.svg" alt="" />
-            </Link>
-            <br />
-            <h5>Leitura de livro</h5>
-            <br />
-            <p>Exercício 04</p>
-          </div>
+        </div>
+        <div className='cards'>
+          <Cards
+            link="/exercicio07"
+            titulo="Cores primárias"
+            subtitulo="Exercicio 7"
+            background="#37FFAB"
+          />
 
+        </div>
+        <div className='cards'>
+          <Cards
+            link="/exercicio08"
+            titulo="Temperatura"
+            subtitulo="Exercicio 08"
+            background="#151515"
+          />
 
-          <div className='opcao'>
-            <Link to='/exercicio05'>
-              <img src="../../assets/images/rosa.svg" alt="" />
-            </Link>
-            <br />
-            <h5>Média de notas</h5>
-            <br />
-            <p>Exercício 05</p>
-          </div>
+        </div>
+        <div className='cards'>
+          <Cards
+            link="/exercicio09"
+            titulo="Sorveteria"
+            subtitulo="Exercicio 09"
+            background="#D0D0D0"
+          />
 
-          <div className='opcao'>
-            <Link to='/exercicio06'>
-              <img src="../../assets/images/crimsom.svg" alt="" />
-            </Link>
-            <br />
-            <h5>Salário líquido</h5>
-            <br />
-            <p>Exercício 06</p>
-          </div>
+        </div>
 
-          <div className='opcao'>
-            <Link to='/exercicio07'>
-              <img src="../../assets/images/ciano.png" alt="" />
-            </Link>
-            <br />
-            <h5>Cores primárias</h5>
-            <br />
-            <p>Exercício 07</p>
-          </div>
+        <div className='cards'>
+          <Cards
+            link="/exercicio10"
+            titulo="Calculo de IMC com histórico"
+            subtitulo="Exercicio 10"
+            background="#B75333"
+          />
 
-
-          <div className='opcao'>
-            <Link to='/exercicio09'>
-              <img src="../../assets/images/gray.svg" alt="" />
-            </Link>
-            <br />
-            <h5>Sorveteria</h5>
-            <br />
-            <p>Exercício 09</p>
-          </div>
-
-
-
-
-
-
-
-
-
-
-          <div className='opcao'>
-            <Link to='/exercicio11'>
-              <img src="../../assets/images/roxo.svg" alt="" />
-            </Link>
-            <br />
-            <h5>Tabuada</h5>
-            <br />
-            <p>Exercício 11</p>
-          </div>
 
         </div>
 

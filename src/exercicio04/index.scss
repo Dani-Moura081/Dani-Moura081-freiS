@@ -1,103 +1,101 @@
-
-.navegacao04 {
+.exercicio04 {
   display: flex;
   flex-direction: column;
-  padding: 2.5%;
-  gap: 40px;
 
-  .linha {
-    background-color: #37B7FF;
-
-
-    width: 100%;
-    height: 2px;
-  }
-
-  .titulo04 {
-    display: flex;
-    flex-direction: row;
-    gap: 1%;
-    align-items: center;
-  }
-
-  .exercicio04 {
+  .navegacao04 {
     display: flex;
     flex-direction: column;
-    align-items: center;
-
-    .explicacao04 {
-      width: 100%;
-      display: flex;
-      padding-top: 4%;
-      background-color: #fff;
-      height: 7em;
-      justify-content: center;
-      border-radius: 8px;
-
-      p {
-        background-color: #fff;
-        font-size: 1.3em;
-      }
-    }
+    padding: 2.5%;
+    gap: 40px;
 
     .funcionalidade04 {
       background-color: #fff;
       display: flex;
       flex-direction: column;
       padding-top: 3%;
-      justify-content: flex-start;
+      margin: 0 auto;
+
+      justify-content: center;
       gap: 1.3em;
       border-radius: 8px;
-      width: 60% !important;
-      height: 12em;
+      width: 35%;
+      height: 15em;
       padding-left: 3%;
 
-      .entradas {
-        display: flex;
-        flex-direction: row;
-        gap: 5px;
-        background-color: #fff;
-        justify-content: space-evenly;
 
-        .inputs {
-          background-color: #fff;
+      box-shadow:
+        rgba(0, 0, 0, 0.19) 0px 10px 20px,
+        rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
+
+        .entradas{
           display: flex;
-          flex-direction: column;
-          gap: 1em;
-
-          h3 {
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          align-self: center;
+          background-color: #fff;
+          .inputs{
             background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content:space-around ;
+            gap: 1.2em; 
+            align-items: center;
+
+            h3 {
+              background-color: #fff;
+            }
+      
+            input {
+              background-color: #fff;
+              border-radius: 8px;
+              height: 3em;
+              width: 84%;
+      
+              font-size: 1.2em;
+              text-align: center;
+              border-color: #a5a5a5;
+            }
+      
+
           }
+        }
 
-          input {
-            background-color: #fff;
+        .executar04 {
+          padding-top: 5%;
+          padding-left: 20%;
+          display: flex;
+          flex-direction: row-reverse;
+          justify-content: center;
+          background-color: #fff;
+          button {
+            background-color: #6278f7;
+            color: #fff;
             border-radius: 8px;
-            height: 2em;
-            width: 64%;
-            font-size: 1.2em;
-            text-align: center;
-            border-color: #a5a5a5;
+            width: 16em;
+            height: 3.1em;
+            font-weight: 400%;
+            border-color: #6278f7;
           }
         }
-      }
-
-      .executar {
-        display: flex;
-        flex-direction: row-reverse;
-        padding-top: 2%;
-        background-color: #fff;
-        padding-right: 12.6%;
-
-        button {
-          background-color: #6278f7;
-          color: #fff;
-          border-radius: 8px;
-          width: 16em;
-          height: 3.1em;
-          font-weight: 400%;
-          border-color: #6278f7;
-        }
-      }
+    
     }
+
+    .resultado {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;  
+      padding-top: 2%;
+      align-self: center;
+
+
+    }
+
+
   }
+
+
+
 }

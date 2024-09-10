@@ -1,60 +1,42 @@
-.menu {
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.container {
     display: flex;
     flex-direction: column;
-    padding: 5% 5%;
-    background-color: #F5F6FA;
+    background-color: #ffffff !important;
+    justify-content: center !important;
+    align-items: center !important;
 
-
-    .containers {
+    
+    .opcao {
+        flex: 1; /* add this line to make all .opcao elements take up an equal amount of space */
         display: flex;
-        flex-direction: row;
-        gap: 4%;
-        padding-top: 4%;
+        flex-direction: column;
+        background-color: #ffffff !important;
+        justify-content: center;
         align-items: center;
+        background-color: #FFFFFF;
+        border-radius: 28px;
+        gap: 7%;
         text-align: center;
-        border-radius: 8px;
-        flex-wrap: wrap;
-        row-gap: 5em;
-
-        box-shadow:
-            rgba(0, 0, 0, 0.19) 0px 10px 20px,
-            rgba(0, 0, 0, 0.23) 0px 6px 6px;
+        width: 13.9em !important;
+        height: 18em !important ;
 
 
+        h4 {
+            background-color: #ffffff !important;
+            font-size: 1.0em;
+            
+        }
+        
+        span {
+            background-color: #ffffff !important;
+            font-size: 1em;
 
-        .opcao {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            background-color: #FFFFFF;
-            width: 16.8%;
-            height: 27em;
-            border-radius: 5px;
-            gap: 7%;
-            text-align: center;
-
-            h5 {
-                text-align: center;
-                font-size: 103%;
-                padding-top: 25%;
-                background-color: #fff;
-
-            }
-
-            img {
-                height: 200%;
-                background-color: #fff;
-                position: static;
-            }
-
-            p {
-                font-size: 110%;
-                background-color: #fff;
-                gap: 10px;
-                display: flex;
-                padding-bottom: 1px;
-            }
         }
     }
+
 }

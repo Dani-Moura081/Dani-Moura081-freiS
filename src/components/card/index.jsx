@@ -1,29 +1,24 @@
-import "./index.scss";
 import { Link } from "react-router-dom";
-import Cores from "../cores";
-
-export default function Card(props) {
+import './index.scss'
 
 
+export default function Cards(props) {
+    const estilo = {
+      width: 90,
+      height: 90, 
+      backgroundColor: props.background,
+      borderRadius: 15,
+    }
 
-
-     
-    
-
-    return (
-        <div className='containers'>
-            <div className='opcao'>
-                <Link className="link" to={props.link}>
-                  <div className="cores" ><style></style></div>
-                </Link>
-                <br />
-                <h5 className="aprsentacao">Cupom de desconto</h5>
-                <br />
-                <p className="exercicio">Exercício 01</p>
-
-            </div>
+  return (
+    <div className="container">
+      <Link to={props.link} style={{ textDecoration: 'none' }}>
+        <div className="opcao">
+          <div style={estilo}></div>
+          <h4>{props.titulo}</h4>
+          <span>{props.subtitulo}</span>
         </div>
-
-
-    )
+      </Link>
+    </div>
+  );
 }

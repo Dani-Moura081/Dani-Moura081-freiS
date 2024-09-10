@@ -2,6 +2,8 @@ import "./index.scss";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import Cabecalho from "../components/cabecalho";
+import Titulo from "../components/titulo";
+import Explicacao from "../components/explicacao";
 
 export default function Exercicio04() {
   const [nomeLivro, setNomeLivro] = useState("");
@@ -13,60 +15,69 @@ export default function Exercicio04() {
     setRes(calcular.toFixed(2))
   }
   return (
-    <div>
+    <div className="exercicio04">
       <Cabecalho />
-
-
       <div className="navegacao04">
-        <div className="titulo04">
-          <Link to="/">
-            <img src="/assets/images/seta.png" alt="" />
-          </Link>
-          <h2>Exercício 04 - Livros</h2>
+
+        <Titulo
+          titulo='Exercício 04 -  Leitura do livro'
+          linha='#37B7FF'
+        />
+
+
+        <Explicacao
+          explicacao='Implementar um programa em Javascript que calcule o tempo que um livro será lido por uma pessoa a partir do nome do livro, do total de páginas e do tempo em segundos de leitura por página'
+        />
+
+        <br />
+        <br />
+        <br />
+        <div className="funcionalidade04">
+          <div className="entradas">
+            <div className="inputs">
+              <h3>Nome do livro</h3>
+              <input
+                type="text"
+                onChange={(e) => setNomeLivro(e.target.value)}
+              />
+
+            </div>
+            <div className="inputs">
+              <h3> Quantidade de páginas</h3>
+              <input
+                type="number"
+                onChange={(e) => setQtdPaginas(e.target.value)}
+              />
+            </div>
+            <div className="inputs">
+              <h3>Tempo em segundos de leitura</h3>
+              <input
+                type="number"
+                onChange={(e) => setTempo(e.target.value)}
+              />
+
+
+
+            </div>
+          </div>
+
+          <div className="executar04">
+            <button
+              onClick={calcularTempo}>
+              executar
+            </button>
+
+
+          </div>
+
+          <br />
+          <br />
+          <br />
         </div>
-        <div className="linha" />
-        <div className="exercicio04">
-          <div className="explicacao04">
-            <p>
-              Implemente um programa em React que calcule o tempo em que um
-              livro será lido por uma pessoa, a partir do nome do livro, do
-              total de paginas e da quantidade de segundo de leitura por pagina
-            </p>
-          </div>
-
+        <div className="resultado">
           <br />
-          <br />
-          <br />
-          <div className="funcionalidade04">
-            <div className="entradas">
-              <div className="inputs">
-                <h3>Nome do livro</h3>
-                <input type="text" onChange={e => setNomeLivro(e.target.value)} />
-              </div>
-
-              <div className="inputs">
-                <h3> Quantidade de paginas</h3>
-                <input type="number" onChange={e => setQtdPaginas(e.target.value)} />
-              </div>
-              <div className="inputs">
-                <h3>Tempo de leitura em seg</h3>
-                <input type="number" onChange={e => setTempo(e.target.value)} />
-              </div>
-            </div>
-            <div className="executar">
-              <button onClick={calcularTempo}>executar</button>
-
-              <br />
-              <br />
-              <br />
-            </div>
-          </div>
-          <div className="resultado04">
-            <br />
-            <h4>Resultado: O tempo de leitura é  {res}H</h4>
-          </div>
+          <h4>você lerá {nomeLivro} em: {res}</h4>
         </div>
       </div>
-    </div>
-  );
+    </div>);
 }
